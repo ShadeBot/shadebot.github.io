@@ -1,0 +1,70 @@
+<style>
+body {
+	background-color: #212121;
+	color: #FAFAFA;
+}
+code {
+    background-color: rgba(80, 80, 80, 0.8);
+	/* background-color: rgba(18, 18, 18, 0.8); */
+    padding: 1px;
+}
+
+@media screen and (min-width: 64em)
+.main-content {
+    max-width: 64rem;
+    padding: 2rem 3.5rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 64em) and (min-width: 42em)
+stylesheet.css:233
+.main-content {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 42em)
+.main-content {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+}
+</style>
+
+
+<section class="main-content">
+<h1>What is ShadeBot?</h1>
+ShadeBot is a discord bot primarily made for the Hentai! server Discord. Its function is to welcome people using a specific room. When users join the server, they can only see important channels like announcements and this welcoming room. They need to have a profile picture & type a specific password and they will then be given a role which will allow them access to the normal channels. They will then be welcomed either by Private message or via a room. ShadeBot also has an optional logging version of the welcome, which can go into a staff log.
+
+<h1>Installation</h1>
+
+<h3>- Install Required Programs -</h3>
+
+Before you can download and setup the bot, there are 2 programs you need to have installed on your computer to make sure everything runs on first go:
+
+Git: https://git-scm.com/downloads
+Node JS: https://nodejs.org/en/download/current/
+
+<h3>- Download Project Files -</h3>
+
+After you have the required programs installed, you can go ahead and download the project files. To do that, you either download the ZIP folder or do <code>git clone https://github.com/ShadeBot/ShadeBot-Discord-Bot.git</code> if you are a console person. Once you finish downloading it you will be ready to setup the config files.
+
+<h3>- Setup Config Files -</h3>
+
+Once you download the project files you will see the <code>configbot.json</code> you'll need to fill it with how you would like ShadeBot to work.
+As well as the config file, there's the jsonStorage which will contain a few files which can be edited of its content. However, all of them can be edited from within Discord.
+
+<h4>&lt; Windows &gt;</h4>
+
+Open the <code>installer.bat</code> file. This will install the required node modules (so you don’t have to do it yourself) and create a <code>run.bat</code> file. You can use this file to start the bot. If you did everything correctly, the bot should start up fine.
+
+If for some reason you have ran <code>installer.bat</code>, it disappeared and it didn’t create <code>run.bat</code>, then re-download <code>installer.bat</code> and try again. Most likely either git or node were not installed correctly. Check if they work and try again.
+
+
+<h4>&lt; Linux / Mac &gt;</h4>
+
+Executable files are kind of weird in Linux, and users most likely use console to do their work. So, to setup this bot on Linux or mac open a terminal in the directory you downloaded the files to and either type <code>./installer.sh</code> or if the script doesn't work manually type <code>npm i</code>.
+
+Once it is finished you can start the bot by using the <code>run.sh</code> script that will keep restarting the bot if it crashes (if the installer worked correctly) otherwise try <code>npm start</code> or <code>node self.js</code>. If you did everything correctly, the bot should start up fine.
+
+<br>
+<b>Currently ShadeBot is made more for the <a href="https://discord.gg/0rJcIjZ54vYONbfJ">Hentai server</a>. However has a config file to be able to change how it works!</b>
+</section>
