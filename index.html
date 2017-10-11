@@ -1,70 +1,108 @@
-<style>
-body {
-	background-color: #212121;
-	color: #FAFAFA;
-}
-code {
-    background-color: rgba(80, 80, 80, 0.8);
-	/* background-color: rgba(18, 18, 18, 0.8); */
-    padding: 1px;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Shadebot</title>
+  	<style>
+  	.sb-header {
+    	background:
+		-webkit-linear-gradient(45deg, hsla(335, 100%, 55%, 1) 0%, hsla(335, 100%, 55%, 0) 70%),
+		-webkit-linear-gradient(315deg, hsla(262, 95%, 50%, 1) 10%, hsla(262, 95%, 50%, 0) 80%),
+		-webkit-linear-gradient(225deg, hsla(307, 90%, 50%, 1) 10%, hsla(307, 90%, 50%, 0) 80%),
+		-webkit-linear-gradient(135deg, hsla(224, 100%, 30%, 1) 100%, hsla(224, 100%, 30%, 0) 70%) !important;
 
-@media screen and (min-width: 64em)
-.main-content {
-    max-width: 64rem;
-    padding: 2rem 3.5rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-}
-@media screen and (max-width: 64em) and (min-width: 42em)
-stylesheet.css:233
-.main-content {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
-}
-@media screen and (max-width: 42em)
-.main-content {
-    padding: 2rem 1rem;
-    font-size: 1rem;
-}
-</style>
+		color: #FFFFFF !important;
 
+		text-align: center !important;
+	}
 
-<section class="main-content">
-<h1>What is ShadeBot?</h1>
-ShadeBot is a discord bot primarily made for the Hentai! server Discord. Its function is to welcome people using a specific room. When users join the server, they can only see important channels like announcements and this welcoming room. They need to have a profile picture & type a specific password and they will then be given a role which will allow them access to the normal channels. They will then be welcomed either by Private message or via a room. ShadeBot also has an optional logging version of the welcome, which can go into a staff log.
+	.btncw-hover:hover {
+		transition: all .15s ease-in-out;
+		color: #343a40 !important;
+	}
 
-<h1>Installation</h1>
+	body {
+		background-color: #212121 !important;
+		color: #f8f9fa !important;
+	}
 
-<h3>- Install Required Programs -</h3>
+	.content-centre {
+		margin: auto;
+		text-align: center;
+		display: block;
+	}
 
-Before you can download and setup the bot, there are 2 programs you need to have installed on your computer to make sure everything runs on first go:
+	.git-pl {
+		text-decoration: none;
+		color: inherit;
+	}
 
-Git: https://git-scm.com/downloads
-Node JS: https://nodejs.org/en/download/current/
+	footer {
+		font-size: 13.5px;
+		padding-top: 50px;
+	}
+	</style>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron sb-header jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Shadebot</h1>
+    <p class="lead">Discord management made easy</p>
+    <a href="https://github.com/Shadebot/ShadeBot-Discord-Bot"><button type="button" class="btn btn-outline-light btncw-hover"><i class="mdi mdi-github-circle"></i> View on GitHub</button></a>
+  </div>
+</div>
+<div class="container-fluid">
+	<!-- About Shadebot -->
+	<div class="row">
+			<div class="col-8">
+				<h2>About Shadebot</h2>
+				<p>Shadebot is a Discord bot primarily made for the 'Hentai!' community Discord server. It's core function is to take out the pain of community management. Shadebot achieves this by giving community admins the tools to provide a safe and fun experience. Regardless if you are an admin of a small community of 5 users to a large community of 5000 users, Shadebot can help take the hassle out of community management.</p>
+			</div>
+			<div class="col-4">
+				<img src="https://camo.githubusercontent.com/cfe7f2ce5377c72a445e70b696b1ae24b019baf3/68747470733a2f2f616c69706f6f646c652e6d652f692f39364e64512e706e67" width="300" height="300" class="content-centre"></img>
+			</div>
+		</div>
+		<br/><br/><br/>
+	<!-- Feature List -->
+	<h2 class="content-centre">Shadebot functions</h2>
+	<br/><br/>
+	<div class="row">
+		<div class="col-4">
+			<span><h3><i class="mdi mdi-account-check"></i> User Checking</h3><p>Check and filter illegitimate users or spam accounts</p></span><br/>
+			<span><h3><i class="mdi mdi-file-document-box"></i> User Logging</h3><p>Log users who have joined or left your community</p></span><br/>
+			<span><h3><i class="mdi mdi-link-variant-off"></i> Discord Invite Blocking</h3><p>Prevent Discord Invite advertising on your community</p></span>
+		</div>
+		<div class="col-4">
+			<span><h3><i class="mdi mdi-tag-multiple"></i> Self-Assigned Roles</h3><p>Allow users to automatically gain roles from Shadebot</p></span><br/>
+			<span><h3><i class="mdi mdi-volume-off"></i> Chat Control</h3><p>Mute users and clear chat history with ease</p></span><br/>
+			<span><h3><i class="mdi mdi-bank"></i> Economy and Points System</h3><p>Give your community members virtual currency and points to trade and play with</p></span>
+		</div>
+		<div class="col-4">
+			<span><h3><i class="mdi mdi-gamepad-variant"></i> Fun and Games</h3><p>Play games with Shadebot such as Roulette</p></span><br/>
+			<span><h3><i class="mdi mdi-music-circle"></i> osu! Integration</h3><p>View osu! profiles directly from Shadebot</p></span><br/>
+			<span><h3><i class="mdi mdi-image"></i> Linked-Image Safety</h3><p>Prevent untrusted or new community members from posting images via a URL</p></span>
+		</div>
+	</div>
+	<br/><br/><br/>
+	<!-- Test Drive -->
+	<div class="row">
+		<div class="col-12 content-centre">
+			<h2>Take Shadebot for a test drive</h2>
+			<p>You can see Shadebot in action on the 'Hentai!' community Discord server.</p>
+			<a href="https://discord.gg/Gfb9x4X"><button type="button" class="btn btn-outline-primary"><i class="mdi mdi-message-text"></i> Join 'Hentai!'</button></a>
+		</div>
+	</div>
+	<br/>
+</div>
+<footer class="content-centre">Created with <i class="mdi mdi-code-tags"></i> by <a class="git-pl" href="https://github.com/Alipoodle">Alipoodle</a> and <a class="git-pl" href="https://github.com/dintendocoltd">Dominic</a> - Licensed under GNU GPLv3</footer>
+<br/>
 
-<h3>- Download Project Files -</h3>
-
-After you have the required programs installed, you can go ahead and download the project files. To do that, you either download the ZIP folder or do <code>git clone https://github.com/ShadeBot/ShadeBot-Discord-Bot.git</code> if you are a console person. Once you finish downloading it you will be ready to setup the config files.
-
-<h3>- Setup Config Files -</h3>
-
-Once you download the project files you will see the <code>configbot.json</code> you'll need to fill it with how you would like ShadeBot to work.
-As well as the config file, there's the jsonStorage which will contain a few files which can be edited of its content. However, all of them can be edited from within Discord.
-
-<h4>&lt; Windows &gt;</h4>
-
-Open the <code>installer.bat</code> file. This will install the required node modules (so you don’t have to do it yourself) and create a <code>run.bat</code> file. You can use this file to start the bot. If you did everything correctly, the bot should start up fine.
-
-If for some reason you have ran <code>installer.bat</code>, it disappeared and it didn’t create <code>run.bat</code>, then re-download <code>installer.bat</code> and try again. Most likely either git or node were not installed correctly. Check if they work and try again.
-
-
-<h4>&lt; Linux / Mac &gt;</h4>
-
-Executable files are kind of weird in Linux, and users most likely use console to do their work. So, to setup this bot on Linux or mac open a terminal in the directory you downloaded the files to and either type <code>./installer.sh</code> or if the script doesn't work manually type <code>npm i</code>.
-
-Once it is finished you can start the bot by using the <code>run.sh</code> script that will keep restarting the bot if it crashes (if the installer worked correctly) otherwise try <code>npm start</code> or <code>node self.js</code>. If you did everything correctly, the bot should start up fine.
-
-<br>
-<b>Currently ShadeBot is made more for the <a href="https://discord.gg/0rJcIjZ54vYONbfJ">Hentai server</a>. However has a config file to be able to change how it works!</b>
-</section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  </body>
+</html>
