@@ -128,7 +128,7 @@
 	$(document).ready(function() {
 	  $(".search").keyup(function () {
 	    var searchTerm = $(".search").val();
-	    var listItem = $('.table tbody').children('tr');
+	    var listItem = $('.results tbody').children('tr');
 	    var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
 	    
 	  $.extend($.expr[':'], {'containsi': function(elem, i, match, array){
