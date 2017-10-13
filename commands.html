@@ -47,10 +47,10 @@
     </tr>
     <tr>
       <td>#daily</td>
-      <td>Allows a user to claim their free daily 200 Shadebucks</td>
+      <td>Allows a user to claim their free daily 100 Shadebucks</td>
     </tr>
     <tr>
-      <td>#send (@user)</td>
+      <td>#send (@user) (amount)</td>
       <td>Allows a user to send Shadebucks between players (a fee of 10% is applied on the Shadebucks sent)</td>
     </tr>
     <tr>
@@ -66,18 +66,18 @@
     	<td>Allows you to spend your Shadebucks on a game of LuckyDip. Use #lb to receive a list of objects and their multipliers via Private Message.</td>
     </tr>
     <tr>
-    	<td>#flip #unflip</td>
-    	<td>(╯°□°）╯︵ ┻━┻)</td>
+    	<td>#flip / #unflip</td>
+    	<td>(╯°□°）╯︵ ┻━┻</td>
     </tr>
     <tr>
     	<td colspan="2"><center><b>Moderator-Only Commands</b></center></center></td>
     </tr>
     <tr>
-    	<td>#mute @user [time]</td>
+    	<td>#mute (@user) [time]</td>
     	<td>Allows a moderator to mute a specific user (by preventing the user from using chat or voice), the moderator can unmute the user by running the command again or by setting a timer - 1m = the user is muted for 1 minute, 1h = the user is muted for 1 hour. The maximum mute time is currently up to 1 week (168h or 10080m = 1 week).</td>
     </tr>
     <tr>
-    	<td>#roles (ban/unban) @user (role)</td>
+    	<td>#roles (ban/unban) (@user) (role)</td>
     	<td>Allows a moderator to impose a ban in order to block a specific user from obtaining a self-assigned role from Shadebot</td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@
     	<td>Allows a moderator to toggle welcome messages to a Direct Message instead. This is useful when a server receives a large influx of new users.</td>
     </tr>
     <tr>
-    	<td>#library add (library-name) (link/-n)</td>
+    	<td>#library add (library name) (link/-n)</td>
     	<td>Allows a moderator to save links to a library and then randomly post the contents of the library. Using -n instead of a link will create a new library to store links in.</td>
     </tr>
     <tr>
@@ -123,11 +123,12 @@
 <footer class="content-centre">Created with <i class="mdi mdi-code-tags"></i> by <a class="git-pl" href="https://github.com/Alipoodle">Alipoodle</a> and <a class="git-pl" href="https://github.com/dintendocoltd">Dominic</a> - Licensed under GNU GPLv3</footer>
 <br/>
 
-	<script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
 	$(document).ready(function() {
 	  $(".search").keyup(function () {
 	    var searchTerm = $(".search").val();
-	    var listItem = $('.results tbody').children('tr');
+	    var listItem = $('.table tbody').children('tr');
 	    var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
 	    
 	  $.extend($.expr[':'], {'containsi': function(elem, i, match, array){
@@ -148,7 +149,6 @@
 	      });
 	});
 	</script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
   </body>
