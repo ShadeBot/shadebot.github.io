@@ -137,10 +137,10 @@
 	  });
 	    
 	  $(".results tbody tr").not(":containsi('" + searchSplit + "')").each(function(e){
-	    $(this).attr('visible','false');
+	    $(this).hide();
 	  });
 	  $(".results tbody tr:containsi('" + searchSplit + "')").each(function(e){
-	    $(this).attr('visible','true');
+	    $(this).show();
 	  });
 	  var jobCount = $('.results tbody tr[visible="true"]').length;
 	    $('.counter').text(jobCount + ' item(s) returned from database');
