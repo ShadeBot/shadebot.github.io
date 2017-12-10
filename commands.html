@@ -16,7 +16,7 @@
   	<noscript><meta http-equiv="refresh" content="0;url=https://shadebot.github.io/nojavascript"></noscript>
     <div class="jumbotron sb-header jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Commands</h1>
+    <h1 class="display-4">Commands</h1>
     <p class="lead">Shadebot Command Reference</p>
     <a href="/"><button type="button" class="btn btn-outline-light btncw-hover"><i class="mdi mdi-arrow-left"></i> Back to frontpage</button></a>
   </div>
@@ -62,12 +62,36 @@
     	<td>Allows you to spend your Shadebucks on a game of Roulette. Betting on Green gives you a 1 in 14 chance of winning a large amount, while Black and Red will gives you a 1 in 1.5 chance of winning a smaller amount.</td>
     </tr>
     <tr>
-    	<td>#luckydip (amount)</td>
-    	<td>Allows you to spend your Shadebucks on a game of LuckyDip. Use #lb to receive a list of objects and their multipliers via Private Message.</td>
+    	<td>#slots (amount)</td>
+    	<td>Allows you to spend your Shadebucks on a game of Slot machine. 2 of the same fruit gives you 2x the money back. 3 of the same fruit gives you 10x back.</td>
     </tr>
     <tr>
-    	<td>#flip / #unflip</td>
-    	<td>(╯°□°）╯︵ ┻━┻</td>
+    	<td>#cat</td>
+    	<td>Post a random image from random.cat website.</td>
+    </tr>
+    <tr>
+    	<td>#osu (username) [mode]</td>
+	    <td>Find out information about your osu account. Use the first letter of the mode, so <b>m</b> for mania, default gamemode is osu!</td>
+    </tr>
+    <tr>
+    	<td>#weather (location)</td>
+    	<td>Find the weather out for a given location.</td>
+    </tr>
+    <tr>
+    	<td>#image (url) [optional additional text]</td>
+    	<td>Allows you to post an image from a URL. Only works in rooms with the Image Link setting enabled.</td>
+    </tr>
+    <tr>
+    	<td>#roleinfo</td>
+    	<td>Find Information about a given role.</td>
+    </tr>
+    <tr>
+    	<td>#serverinfo</td>
+    	<td>Find Information about the current server you are on.</td>
+    </tr>
+    <tr>
+    	<td>#userinfo</td>
+    	<td>Find Information about a given user.</td>
     </tr>
     <tr>
     	<td colspan="2"><center><b>Moderator-Only Commands</b></center></center></td>
@@ -89,14 +113,26 @@
     	<td>Allows a moderator to toggle welcome messages to a Direct Message instead. This is useful when a server receives a large influx of new users.</td>
     </tr>
     <tr>
-    	<td>#library add (library name) (link/-n)</td>
-    	<td>Allows a moderator to save links to a library and then randomly post the contents of the library. Using -n instead of a link will create a new library to store links in.</td>
+    	<td>#checkgame (search)</td>
+    	<td>Find users who are currently playing a given game.</td>
+    </tr>
+    <tr>
+    	<td>#checkinvites</td>
+    	<td>Find users who are trying to advertise in the current playing on their profile.</td>
+    </tr>
+    <tr>
+    	<td>#clear (number)</td>
+    	<td>Allows a owner to bulk delete messages in a room. Moderators are limited to 20 messages, while owner can do up to the limit of 100.</td>
+    </tr>
+    <tr>
+    	<td>#clearself (number)</td>
+    	<td>Allows a owner to bulk delete messages of the bot in a room. Moderators are limited to 20 messages, while owner can do up to the limit of 100.</td>
     </tr>
     <tr>
     	<td colspan="2"><center><b>Owner-Only Commands</b></center></center></td>
     </tr>
     <tr>
-    	<td>#botinfo</td>
+    	<td>#stats</td>
     	<td>Shows information about the bot</td>
     </tr>
     <tr>
@@ -112,9 +148,14 @@
     	<td>Allows a owner to change Shadebot's permissions for a specific room, for instance, Shadebot could be configured to disable posting images to a specific room.</td>
     </tr>
     <tr>
-    	<td>#clear (number)</td>
-    	<td>Allows a owner to bulk delete messages in a room. The number can be set anywhere from 2 to 100.</td>
+    	<td>#reboot</td>
+    	<td>This will stop the bot. If you are running the auto restart script the bot will reboot correctly.</td>
     </tr>
+    <tr>
+    	<td>#reload (command)</td>
+    	<td>Reloads a command. This should be used when you are editing a command.</td>
+    </tr>
+
   </tbody>
 </table>
 </div>
