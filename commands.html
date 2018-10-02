@@ -24,16 +24,15 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<!-- Search (Fix JS First) -->
 			<div class="input-group stylish-input-group">
-                    <input type="text" class="Input search form-control"  placeholder="Search" >
-                    <span class="input-group-addon">
-                        <button type="submit">
-                            <span class="mdi mdi-magnify"></span>
-                        </button>  
-                    </span>
-                </div>
-                <br/>
+        <input type="text" class="Input search form-control"  placeholder="Search" >
+          <span class="input-group-addon">
+            <button type="submit">
+              <span class="mdi mdi-magnify"></span>
+            </button>  
+          </span>
+        </div>
+        <br/>
 		<table class="table table-striped results table-inverse table-responsive">
   <thead>
     <tr>
@@ -43,119 +42,55 @@
   </thead>
   <tbody>
   	<tr>
-    	<td colspan="2"><center><b>General Commands</b></center></center></td>
+    	<td colspan="2"><center><b>General Commands</b></center></td>
     </tr>
     <tr>
-      <td>#daily</td>
-      <td>Allows a user to claim their free daily 100 Shadebucks</td>
+      <td>#channelinfo [#channel]</td>
+      <td>Find information about a channel</td>
     </tr>
     <tr>
-      <td>#send (@user) (amount)</td>
-      <td>Allows a user to send Shadebucks between players (a fee of 10% is applied on the Shadebucks sent)</td>
+      <td>#color (hex color)</td>
+      <td>Shows information and a preview of a hex color</td>
     </tr>
     <tr>
-      <td>#bal [@user]</td>
-      <td>Allows a user to check their own or another user's Shadebucks balance</td>
-    </tr>
-    <tr>
-    	<td>#roulette (black, red, green) (amount)</td>
-    	<td>Allows you to spend your Shadebucks on a game of Roulette. Betting on Green gives you a 1 in 14 chance of winning a large amount, while Black and Red will gives you a 1 in 1.5 chance of winning a smaller amount.</td>
-    </tr>
-    <tr>
-    	<td>#slots (amount)</td>
-    	<td>Allows you to spend your Shadebucks on a game of Slot machine. 2 of the same fruit gives you 2x the money back. 3 of the same fruit gives you 10x back.</td>
-    </tr>
-    <tr>
-    	<td>#cat</td>
-    	<td>Post a random image from random.cat website.</td>
-    </tr>
-    <tr>
-    	<td>#osu (username) [mode]</td>
-	    <td>Find out information about your osu account. Use the first letter of the mode, so <b>m</b> for mania, default gamemode is osu!</td>
-    </tr>
-    <tr>
-    	<td>#weather (location)</td>
-    	<td>Find the weather out for a given location.</td>
-    </tr>
-    <tr>
-    	<td>#image (url) [optional additional text]</td>
-    	<td>Allows you to post an image from a URL. Only works in rooms with the Image Link setting enabled.</td>
-    </tr>
-    <tr>
-    	<td>#roleinfo</td>
-    	<td>Find Information about a given role.</td>
-    </tr>
-    <tr>
-    	<td>#serverinfo</td>
-    	<td>Find Information about the current server you are on.</td>
-    </tr>
-    <tr>
-    	<td>#userinfo</td>
-    	<td>Find Information about a given user.</td>
-    </tr>
-    <tr>
-    	<td colspan="2"><center><b>Moderator-Only Commands</b></center></center></td>
-    </tr>
-    <tr>
-    	<td>#mute (@user) [time]</td>
-    	<td>Allows a moderator to mute a specific user (by preventing the user from using chat or voice), the moderator can unmute the user by running the command again or by setting a timer - 1m = the user is muted for 1 minute, 1h = the user is muted for 1 hour. The maximum mute time is currently up to 1 week (168h or 10080m = 1 week).</td>
-    </tr>
-    <tr>
-    	<td>#roles (ban/unban) (@user) (role)</td>
-    	<td>Allows a moderator to impose a ban in order to block a specific user from obtaining a self-assigned role from Shadebot</td>
-    </tr>
-    <tr>
-    	<td>#settings view [#channel]</td>
-    	<td>Allows a moderator to view the permissions Shadebot has to a specific channel.</td>
-    </tr>
-    <tr>
-    	<td>#welcome</td>
-    	<td>Allows a moderator to toggle welcome messages to a Direct Message instead. This is useful when a server receives a large influx of new users.</td>
-    </tr>
-    <tr>
-    	<td>#checkgame (search)</td>
-    	<td>Find users who are currently playing a given game.</td>
-    </tr>
-    <tr>
-    	<td>#checkinvites</td>
-    	<td>Find users who are trying to advertise in the current playing on their profile.</td>
-    </tr>
-    <tr>
-    	<td>#clear [@user] (number)</td>
-    	<td>Allows a owner to bulk delete messages in a room. Moderators are limited to 20 messages, while owner can do up to the limit of 100.</td>
-    </tr>
-    <tr>
-    	<td colspan="2"><center><b>Owner-Only Commands</b></center></center></td>
-    </tr>
-    <tr>
-    	<td>#clearself (number)</td>
-    	<td>Allows a owner to bulk delete messages of the bot in a room. Moderators are limited to 20 messages, while owner can do up to the limit of 100.</td>
+      <td>#help [command]</td>
+      <td>Displays all the available commands or specific command's help</td>
     </tr>
     <tr>
     	<td>#stats</td>
-    	<td>Shows information about the bot</td>
+    	<td>Gives some useful bot statistics</td>
     </tr>
     <tr>
-    	<td>#welcomenum (number)</td>
-    	<td>Allows a owner to change the current number displayed on the welcoming counter - this is generally used if something goes wrong with the counter.</td>
+    	<td>#userinfo [user search, id, @user]</td>
+    	<td>Gets useful information about a user</td>
     </tr>
     <tr>
-    	<td>#roles add (trigger) (role id)</td>
-    	<td>Allows a owner to add a new self-assigned role.</td>
+    	<td>#serverinfo</td>
+    	<td>Get useful information about the server</td>
     </tr>
     <tr>
-    	<td>#settings edit (invite/​commands/​image/​link/​reply) (true/false)</td>
-    	<td>Allows a owner to change Shadebot's permissions for a specific room, for instance, Shadebot could be configured to disable posting images to a specific room.</td>
+    	<td>#roleinfo [role search, id, @role]</td>
+	    <td>Get useful information about a role</td>
     </tr>
     <tr>
-    	<td>#reboot</td>
-    	<td>This will stop the bot. If you are running the auto restart script the bot will reboot correctly.</td>
+    	<td colspan="2"><center><b>Moderator-Only Commands</b></center></td>
     </tr>
     <tr>
-    	<td>#reload (command)</td>
-    	<td>Reloads a command. This should be used when you are editing a command.</td>
+    	<td>#checkgame (search)</td>
+    	<td>Returns a list of members with an specific game.</td>
     </tr>
-
+    <tr>
+    	<td>#clear [@user] (number)</td>
+    	<td>Deletes messages from anyone in the channel.</td>
+    </tr>
+    <tr>
+    	<td>#ghostban (id)</td>
+    	<td>Bans a user from an ID. Even when they aren't on the server.</td>
+    </tr>
+    <tr>
+    	<td>#mute (@user) [time]</td>
+    	<td>Mutes or unmutes a mentioned user</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -183,10 +118,6 @@
 	  $(".results tbody tr:containsi('" + searchSplit + "')").each(function(e){
 	    $(this).show();
 	  });
-	  var jobCount = $('.results tbody tr[visible="true"]').length;
-	    $('.counter').text(jobCount + ' item(s) returned from database');
-	  if(jobCount == '0') {$('.no-result').show();}
-	    else {$('.no-result').hide();}
 	      });
 	});
 	</script>
